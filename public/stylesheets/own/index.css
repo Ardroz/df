@@ -122,3 +122,27 @@ body {
 .ghost {
   color: #141414;
 }
+.video {
+  width: 500px;
+  margin: auto;
+}
+.lol {
+  clear: both;
+}
+.rofl {
+  margin: auto;
+}
+.roflolmao {
+  padding-top: 10px;
+}
+.est {
+  margin: auto;
+}
+.fotos-lol {
+  width: 70%;
+  margin: auto;
+}
+.fotos {
+  width: 100%;
+  margin: auto;
+}

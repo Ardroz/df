@@ -41,6 +41,8 @@ app.get('/tl', routes.tl);
 app.get('/tl_historia', routes.tl_historia);
 app.get('/tl_visita', routes.tl_visita);
 app.get('/tl_localizacion', routes.tl_localizacion);
+app.get('/contacto', routes.contacto);
+app.get('/nosotros', routes.nosotros);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

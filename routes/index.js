@@ -54,3 +54,11 @@ exports.ba_visita = function(req, res){
 exports.ba_localizacion = function(req, res){
   res.render('ba_localizacion', { title: 'Df', nav: 'mr' });
 };
+
+exports.nosotros = function(req, res){
+  res.render('nosotros', { title: 'Df'});
+};
+
+exports.contacto = function(req, res){
+  res.render('contacto', { title: 'Df'});
+};

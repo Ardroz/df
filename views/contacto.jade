@@ -1,0 +1,32 @@
+extends layout
+
+block content
+
+  .jumbotron.text-center
+    h1 ¿Algún comentario?
+
+  .container
+    .row
+      .col-sm-4
+        h3 Contacto
+        hr
+        address
+          strong Email:
+          a(href='#')  visitdf@gmail.com
+      .col-sm-8.contact-form
+        form#contact.form(method='post', role='form')
+          .row
+            .col-xs-6.col-md-6.form-group
+              input#name.form-control(name='name', placeholder='Nombre', 
+                type='text', required='required', autofocus='autofocus')
+            .col-xs-6.col-md-6.form-group
+              input#email.form-control(name='email', placeholder='Correo', 
+                type='email', required='required')
+          textarea#message.form-control(name='message', placeholder='Mensaje', 
+            rows='5')
+          br
+          .row
+            .col-xs-12.col-md-12.form-group
+              button.btn.btn-primary.pull-right(type='submit') Enviar
+  br
+  br

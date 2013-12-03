@@ -1,1 +1,23 @@
 extends layout
+
+block custom-stylesheets
+  link(rel='stylesheet', type='text/css', href='stylesheets/own/panel-tabs.css')
+
+block content
+  .row.tabs-wrapper
+    .col-md-11
+      .panel.panel-warning
+        .panel-heading
+          h3.panel-title Historia
+        .panel-body
+          .col-md-12
+            .video
+              iframe(width='420', height='315', 
+                src='//www.youtube.com/embed/pbG9NKhjcYo', frameborder='0', 
+                allowfullscreen='allowfullscreen')
+          .col-md-12
+            br
+            p.text-center Fue edificado aprovechando parte de la estructura que en un principio iba a ser destinada al Palacio Legislativo-Cámara de diputados y senadores. Ese recinto fue promovido por el presidente Porfirio Díaz y su gobierno, mismo que en el año de 1896, emitió una convocatoria internacional para la realización del proyecto de la futura sede de las cámaras de diputados y senadores.
+            p.text-center En dicho concurso participaron destacados arquitectos de la época entre los que destacaba Adamo Boari, mismo que construiría posteriormente el Palacio de Correos y el Palacio de Bellas Artes. Tras un proceso de selección poco claro y lleno de polémicas, el proyecto fue adjudicado al arquitecto francés Émile Bénard. De ese modo la primera piedra de este edificio fue colocada el 23 de septiembre de 1910 por el propio presidente Porfirio Díaz. Tras un avance notable en el armado de la estructura de acero del edificio, la construcción del Palacio Legislativo fue suspendida por falta de recursos a raíz de las luchas revolucionarias. La estructura del que iba a ser uno de los edificios más suntuosos de la ciudad, permaneció inutilizada durante varios lustros, lo que motivó que empezaran a ser desmanteladas las naves laterales y se pensaba incluso en la demolición total del inmueble después la estructura fue abandonada desde 1911 hasta 1930. Para evitarlo, el arquitecto mexicano Carlos Obregón Santacilia propuso al entonces Secretario de Hacienda, Alberto J. Pani, el aprovechamiento de parte de la estructura de la cúpula del frustrado Palacio Legislativo para erigir un monumento a la entonces recién concluida Revolución mexicana. Dicha propuesta fue aceptada y su construcción abarcó de 1933 a 1938. Después removió el águila que estaba en la cúpula del monumento a la Revolución hasta el Monumento a La Raza en 1940.
+
+block custom-scripts
