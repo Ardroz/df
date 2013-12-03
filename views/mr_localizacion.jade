@@ -1,1 +1,28 @@
 extends layout
+
+block custom-stylesheets
+  link(rel='stylesheet', type='text/css', href='stylesheets/own/panel-tabs.css')
+
+block content
+  .row.tabs-wrapper
+    .col-md-11
+      .panel.panel-warning
+        .panel-heading
+          h3.panel-title Localización
+        .panel-body
+          .col-md-4
+            h2 Dirección
+            p Plaza de la República s/n, col. Tabacalera, Del. Cuauhtémoc, c.p. 06030 México D.F.
+            h2 Horarios
+            p L, Ma, J 12:00 - 20:00 hrs. / M 12:00 - 18:00 hrs. / V-S 12:00 - 22:00 hrs. / D10:00 - 20:00 hrs. / días festivos 12:00 - 20:00 hrs
+            h2 Teléfonos
+            p 5592-2038
+            p 5591-1894
+            p 5592-2059
+
+          .col-md-8
+            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7524.908296545717!2d-99.15492920738942!3d19.43597681416264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x20fdc6dd3dcc0c20!2sMonumento+A+la+Revoluci%C3%B3n!5e0!3m2!1sen!2smx!4v1386044415748', width='700', height='450', frameborder='1', style='border: 1;')
+
+block custom-scripts
+  script(src='https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false')
+  script(src='/javascripts/own/mr-map.js')

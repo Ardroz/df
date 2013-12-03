@@ -2,67 +2,53 @@ extends layout
 
 block content
 
-  #myCarousel.carousel.slide(data-ride='carousel')
+  #MR.carousel.slide(data-ride='carousel')
     ol.carousel-indicators
-      li.active(data-target='#myCarousel', data-slide-to='0')
-      li(data-target='#myCarousel', data-slide-to='1')
-      li(data-target='#myCarousel', data-slide-to='2')
+      li.active(data-target='#MR', data-slide-to='0')
+      li(data-target='#MR', data-slide-to='1')
+      li(data-target='#MR', data-slide-to='2')
     .carousel-inner
       .item.active
-        img(data-src='holder.js/900x500/auto/#777:#7a7a7a/text:First slide', alt='First slide')
+        img( src = 'images/m2.png', 
+          alt = 'First slide')
         .container
-          .carousel-caption
-            h1 Example headline.
-            p
-              | Note: If you're viewing this page via a
-              code file:
-            p
-              a.btn.btn-lg.btn-primary(href='#', role='button') Sign up today
+          .carousel-caption.ghost
+            h1 "-A la Revolución- de ayer, de hoy, de mañana y de siempre."
+            h4 Arq. Carlos Obregón Santacilia
       .item
-        img(data-src='holder.js/900x500/auto/#666:#6a6a6a/text:Second slide', alt='Second slide')
+        img(src = 'images/mr1.jpg', 
+          alt='Second slide')
         .container
           .carousel-caption
-            h1 Another example headline.
-            p
-              | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-            p
-              a.btn.btn-lg.btn-primary(href='#', role='button') Learn more
       .item
-        img(data-src='holder.js/900x500/auto/#555:#5a5a5a/text:Third slide', alt='Third slide')
+        img(src = 'images/mr3.jpg', 
+          alt='Second slide')
         .container
           .carousel-caption
-            h1 One more for good measure.
-            p
-              | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-            p
-              a.btn.btn-lg.btn-primary(href='#', role='button') Browse gallery
-    a.left.carousel-control(href='#myCarousel', data-slide='prev')
+    a.left.carousel-control(href='#MR', data-slide='prev')
       span.glyphicon.glyphicon-chevron-left
-    a.right.carousel-control(href='#myCarousel', data-slide='next')
+    a.right.carousel-control(href='#MR', data-slide='next')
       span.glyphicon.glyphicon-chevron-right
   
   .container.marketing
 
     .row
       .col-lg-4
-        img.img-circle(data-src='holder.js/140x140', alt='Generic placeholder image')
-        h2 Heading
-        p
-          | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-        p
-          a.btn.btn-default(href='#', role='button') View details »
+        img.img-circle( src='images/fuentes.jpg', width = "200", heigth = "200",
+          alt='Fuentes')
+        h2 Fuente Centenario
+        p Ven a darte un chapuzón o si lo prefieres simplemente observa el bello espectáculo lleno de luz y diversión.
       
       .col-lg-4
-        img.img-circle(data-src='holder.js/140x140', alt='Generic placeholder image')
-        h2 Heading
-        p
-          | Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
-        p
-          a.btn.btn-default(href='#', role='button') View details »
+        img.img-circle( src='images/museo1.jpg', width = "200", heigth = "200",
+          alt='Fuentes')
+        h2 Museo
+        p En el sótano del monumento se encuentra el Museo Nacional de la Revolución, fue inaugurado el 20 de noviembre de 1986. El museo se enfoca a mostrar la historia de México, tiene como exposición Permanente "Sesenta y tres años en la historia de México 1857-1920" que abarca desde la promulgación de la Constitución de 1857 hasta la Presidencia de Venustiano Carranza, enfocandose en el periodo revolucionario.
       
       .col-lg-4
-        img.img-circle(data-src='holder.js/140x140', alt='Generic placeholder image')
-        h2 Heading
+        img.img-circle( src='images/mirador1.jpg', width = "200", heigth = "200",
+          alt='Fuentes')
+        h2 Mirador
         p
           | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
         p

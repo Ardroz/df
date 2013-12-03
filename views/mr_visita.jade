@@ -1,1 +1,49 @@
 extends layout
+
+block custom-stylesheets
+  link(rel='stylesheet', type='text/css', href='stylesheets/own/panel-tabs.css')
+
+block content
+  .row.tabs-wrapper
+    .col-md-11
+      .panel.panel-warning
+        .panel-heading
+          h3.panel-title ¿Qué hay?
+          span.pull-right
+            ul.nav.panel-tabs
+              li.active
+                a(href='#tab1', data-toggle='tab') Museo
+              li
+                a(href='#tab2', data-toggle='tab') Mirador
+              li
+                a(href='#tab3', data-toggle='tab') Café Adelita
+        .panel-body
+          .tab-content
+            #tab1.tab-pane.active
+              .col-md-6
+                h2 Museo Nacional de la Revolución
+                p El MNR cuenta con tres áreas de exhibición:
+                p Museo de sitio, donde se pueden apreciar las distintas etapas constructivas del Palacio Legislativo, además de que el visitante puede observar parte de la estructura de acero de lo que iba a ser el Palacio Legislativo
+                p Una sala de exposiciones temporales, donde periódicamente se exhiben diferentes muestras con temas específicos que complementan la información sobre el movimiento armado de 1910
+                p Y su exposición permanente, estructurada en orden temático y cronológico a través de ocho salas.
+              .col-md-6
+                img.img-thumbnail.img-responsive( src = 'images/museo.jpg',
+                  alt = 'Museo' )
+            #tab2.tab-pane
+              .col-md-6
+                h2 Mirador
+                p En el centro del monumento se encuentra un elevador de cristal y este te lleva a la parte superior del monumento donde hay:
+                p Visitas guiadas + Telescopios + Penny press + Tienda de Productos 100% Revolución + Adelita Café nivel mirador y vestíbulo.
+                br
+                p Para más información sobre los paquetes visita: 
+                  a( href = 'http://www.mrm.mx/' ) www.mrm.mx
+              .col-md-6
+                img.img-thumbnail.img-responsive( src = 'images/mirador.jpg',
+                  alt = 'Mirador' )
+            #tab3.tab-pane
+              .col-md-6
+                h2 Café Adelita
+                p Y por último para cerrar la tarde de una manera perfecta el MR tiene a su disposición el café Adelita.
+              .col-md-6
+                img.img-thumbnail.img-responsive( src = 'images/cafe.jpg',
+                  alt = 'Café Adelita' )

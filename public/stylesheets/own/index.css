@@ -2,8 +2,8 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 body {
+  background-color: #dbdbdb;
   padding-bottom: 40px;
-  padding-top: 90px;
   color: #5a5a5a;
 }
 /* CUSTOMIZE THE NAVBAR
@@ -118,4 +118,7 @@ body {
   .featurette-heading {
     margin-top: 120px;
   }
+}
+.ghost {
+  color: #141414;
 }
