@@ -14,13 +14,6 @@ html
       link(rel='stylesheet', href='/stylesheets/own/index.css')
     block custom-stylesheets
   body
-    -if ( nav === 'mr')
-      include mr-navbar
-    -if ( nav === 'tl' )
-      include tl-navbar
-    -if ( nav === 'ba' )
-      include ba-navbar
-
     block content
 
     include footer
